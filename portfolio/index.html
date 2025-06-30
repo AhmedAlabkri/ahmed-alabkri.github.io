@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Ahmed Alabkri - Game & Interactive Systems Developer">
+    <title>Ahmed Alabkri - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">AA</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about"    class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact"  class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero -->
+        <section class="hero" id="about">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Ahmed Alabkri</h1>
+                    <p class="hero__subtitle">Game & Interactive Systems Developer</p>
+                    <p class="hero__tagline">
+                        A recent Computer Science graduate passionate about building engaging, real-time interactive systems in both <strong>Unreal Engine (C++)</strong> and <strong>Unity (C#)</strong>. Eager to contribute my problem-solving skills to a creative development team.
+                    </p>
+                    <a href="#projects" class="btn btn--primary">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2 class="section__title">Featured Projects</h2>
+
+                <div class="projects__grid">
+                    <!-- Project 1 - Souls-Like Combat System (REVISED) -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="./images/VIDEOS/GifCombatSys.gif" alt="Souls-Like Combat System thumbnail">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Souls-Like Combat System</h3>
+                            <p class="project-card__description">
+                                A scalable C++ framework for Unreal Engine 5, engineered for the deliberate combat of modern action RPGs.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">Unreal Engine 5</span>
+                                <span class="tag">C++</span>
+                                <span class="tag">Gameplay Architecture</span>
+                            </div>
+                            <button class="btn btn--secondary project-details-btn"
+                                    data-project="0">View Details</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 – ATOM -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="./images/project1-thumbnail.gif"
+                                 alt="ATOM mixed reality EMS support thumbnail">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Augmenting The On-Scene Medic (ATOM)</h3>
+                            <p class="project-card__description">
+                                Mixed-reality toolkit that guides paramedics through weight measurement,
+                                drug verification, and dosing to cut pediatric medication errors.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">HoloLens 2</span>
+                            </div>
+                            <button class="btn btn--secondary project-details-btn"
+                                    data-project="1">View Details</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 - Immersive AI Modules -->
+                    <article class="project-card project-card--wide-thumb">
+                        <div class="project-card__image">
+                            <img src="./images/project2-thumbnail.png" alt="Immersive AI Learning Modules in VR thumbnail">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Immersive AI Learning Modules</h3>
+                            <p class="project-card__description">
+                                A VR proof-of-concept developed to make complex AI concepts tangible and intuitive for university-level students.
+                            </p>
+                            <div class="project-card__tags">
+                                <span class="tag">Unity</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">Virtual Reality</span>
+                                <span class="tag">AI Education</span>
+                            </div>
+                            <button class="btn btn--secondary project-details-btn"
+                                    data-project="2">View Details</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="section__title">Get In Touch</h2>
+                <div class="contact__content">
+                    <div>
+                        <h3 class="contact__subtitle">Let's Connect</h3>
+                        <p class="contact__text">
+                            I am actively seeking a Game Programmer Trainee or junior-level role where I can contribute to exciting projects and grow my technical skills. I'm eager to learn from an experienced team and build great games. Feel free to reach out via the form or by email.
+                        </p>
+                        <p class="contact__text" style="margin-top: var(--spacing-lg);">
+                            <a href="mailto:ahmedalabkri@gmail.com" style="color: var(--color-primary); font-weight: 500;">ahmedalabkri@gmail.com</a>
+                        </p>
+                        <div class="social-links" style="margin-top: var(--spacing-xl);">
+                            <a href="https://github.com/AhmedAlabkri" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                            <a href="https://www.linkedin.com/in/ahmed-alabkri" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                        </div>
+                    </div>
+                    <form class="contact__form" id="contact-form" action="https://formspree.io/f/xnnvwnyg" method="POST">
+                        <div class="form__group">
+                            <label for="name" class="form__label">Name</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label">Email</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label">Message</label>
+                            <textarea id="message" name="message" rows="5" class="form__textarea" placeholder="How can I help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">© 2024 Ahmed Alabkri. All rights reserved.</p>
+            <a href="#about" class="back-to-top" id="back-to-top" aria-label="Back to top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line>
+                     <polyline points="5 12 12 5 19 12"></polyline></svg>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal" aria-hidden="true">
+        <div class="modal__backdrop"></div>
+        <div class="modal__container">
+            <button class="modal__close" aria-label="Close modal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line>
+                     <line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+
+            <div class="modal__content">
+                <div class="modal__header">
+                    <img class="modal__hero-image" src="" alt="">
+                </div>
+
+                <div class="modal__body">
+                    <h2 class="modal__title"></h2>
+                    <div class="modal__tags"></div>
+
+                    <div class="modal__section">
+                        <h3>Overview</h3>
+                        <p class="modal__overview"></p>
+                    </div>
+
+                    <div class="modal__section">
+                        <h3>Architecture & Design</h3>
+                        <p class="modal__challenge"></p>
+                    </div>
+
+                    <div class="modal__section" style="display:none;">
+                        <h3>Solution</h3>
+                        <p class="modal__solution"></p>
+                    </div>
+
+                    <!-- My Contribution (hidden when not provided) -->
+                    <div class="modal__section modal__contribution" style="display:none;">
+                        <h3>My Contribution</h3>
+                        <p class="modal__contribution-text"></p>
+                        <div class="modal__contribution-actions">
+                            <a href="#" id="swap-to-measure-btn" class="btn btn--secondary hidden">
+                                Watch Measurement Tool
+                            </a>
+                            <a href="#" id="swap-to-demo-btn" class="btn btn--secondary hidden">
+                                Show Main Demo
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="modal__section">
+                        <h3>Key Features</h3>
+                        <ul class="modal__features"></ul>
+                    </div>
+
+                    <div class="modal__section">
+                        <h3>Technologies Used</h3>
+                        <div class="modal__tech-stack"></div>
+                    </div>
+
+                    <div class="modal__actions">
+                        <a href="#" class="btn btn--primary modal__demo-link"
+                           target="_blank" rel="noopener noreferrer">View Live Demo</a>
+                        <a href="#" class="btn btn--secondary modal__github-link"
+                           target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal__navigation">
+                <button class="modal__nav modal__nav--prev" aria-label="Previous project">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+                <button class="modal__nav modal__nav--next" aria-label="Next project">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                         stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
